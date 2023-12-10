@@ -22,9 +22,8 @@ Para hacer esto, puedes buscar “Símbolo del sistema” o “Terminal” en el
 
 Usa el comando `cd` para cambiar al directorio donde descomprimiste el código fuente. Por ejemplo:
 
-```bash
+```
 cd ruta/del/proyecto
-
 
 ```
 
@@ -39,7 +38,10 @@ python -m spacy download es_core_news_md
 
 Navega al Directorio del Proyecto (si no lo has hecho aún):
 
+```
 cd ruta/del/proyecto
+
+```
 
 #### Ejecuta la Aplicación Flask:
 
@@ -56,13 +58,12 @@ Verás mensajes en la terminal indicando que el servidor Flask ha iniciado.
 
 Abre otra terminal o usa herramientas como cURL para enviar una solicitud POST a la API de la aplicación Flask.
 
+```
 curl -X POST -H "Content-Type: application/json" -d '{"pregunta": "¿Dónde puedo consultar mi kardex?"}' http://127.0.0.1:5000/pregunta
+```
+
 Si estás en Windows y no tienes cURL instalado, considera usar Postman o PowerShell.
 
 #### Observa la Respuesta en la Terminal de la Aplicación Flask:
 
 En la terminal donde ejecutaste app.py, deberías ver la respuesta generada por la aplicación.
-
-```
-
-```
